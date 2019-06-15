@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          table {
+  
+}
+
+th, td {
+  padding: 15px;
+ 
+  vertical-align: top;
+text-align: left;
+line-height: 14px;
+
+}
+tr:hover {background-color: #f5f5f5;}
+th {
+  height: 50px;
+  text-align: left;
+}
+
+        </style>
+    </head>
+    <body>
+     
+        <table border="1">
+            <tr><th>Category/Services</th><th>EC2</th><th>Lightsail</th><th>ECR</th><th>ECS</th><th>EKS</th><th>Lambda</th><th>Batch</th><th>Elastic Beanstalk</th></tr>
+            
+            <tr><th>Service Info :</th><th>Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers.</th><th>designed to be the easiest way to launch and manage a virtual private server with AWS</th>
+                <th>Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.</th>
+                <th>Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS. </th>
+                <th>Amazon Elastic Container Service for Kubernetes (Amazon EKS) makes it easy to deploy, manage, and scale containerized applications using Kubernetes on AWS.</th>
+                <th>AWS Lambda lets you run code without provisioning or managing servers.</th><th>AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. </th>
+                <th>AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker on familiar servers such as Apache, Nginx, Passenger, and Internet Information Services (IIS).
+                </th></tr>
+            
+            
+            <th>Charge: </th><th>Amazon EC2 changes the economics of computing by allowing you to pay only for capacity that you actually use.</th><th>Every single Lightsail plan also includes a healthy amount of free IN and OUT data transfer. For example, using the cheapest Lightsail bundle you can send and receive up to 1 TB of data to the Internet within the month, at no extra charge.
+            </th><th>With Amazon ECR, there are no upfront fees or commitments. You pay only for the amount of data you store in your repositories and data transferred to the Internet.
+            </th><th>There is no additional charge for Amazon ECS. You pay for AWS resources (e.g. EC2 instances or EBS volumes) you create to store and run your application. You only pay for what you use, as you use it; there are no minimum fees and no upfront commitments.</th><th>You pay $0.20 per hour for each Amazon EKS cluster that you create and for the AWS resources you create to run your Kubernetes worker nodes. You only pay for what you use, as you use it; there are no minimum fees and no upfront commitments.
+            </th><th>AWS Lambda is priced on a pay per use basis.</th><th>There is no additional charge for AWS Batch. You only pay for the AWS Resources (e.g. EC2 Instances) you create to store and run your batch jobs.
+            </th><th>There is no additional charge for AWS Elastic Beanstalk–you pay only for the AWS resources actually used to store and run your application.</th>
+            
+            
+             <tr><th>Instances</th><th>Accelerated Computing instances | Compute Optimized instances | General Purpose instances | High Memory instances | Memory Optimized instances | Previous Generation instances | Storage Optimized instances
+                 </th><th>A Lightsail instance is a virtual private server (VPS) that lives in the AWS Cloud. Use your Lightsail instances to store your data, run your code, and build web-based applications or websites. Your instances can connect to each other and to other AWS resources through both public (Internet) and private (VPC) networking. You can create, manage, and connect easily to instances right from the Lightsail console.
+                 </th><th>You can now setup AWS PrivateLink endpoints to allow your instances pull images without traversing through the public internet.
+                 </th><th>Amazon ECR is integrated with Amazon ECS allowing you to easily store, run, and manage container images for applications running on Amazon ECS. All you need to do is specify the Amazon ECR repository in your Task Definition and attach the AmazonEC2ContainerServiceforEC2Role to your instances. Then Amazon ECS will retrieve the appropriate images for your applications.
+                 </th><th>AWS publishes EKS Amazon Machine Images (AMIs) that include the necessary worker node binaries (Docker and Kubelet). This AMI is updated regularly and builds in the most up to date version of these components. AWS also publishes Packer scripts that document our build steps, allowing you to identify the binaries included in each version of the AMI. You can use existing Auto Scaling functionality to update worker instances to the latest version of the EKS AMI. You can also use our Packer scripts to build a new version of a custom AMI.
+                 </th><th> With Lambda you do not have to provision your own instances; Lambda performs all the operational and administrative activities on your behalf, including capacity provisioning, monitoring fleet health, applying security patches to the underlying compute resources, deploying your code, running a web service front end, and monitoring and logging your code.
+                 </th><th>AWS Batch dynamically provisions the optimal quantity and type of compute resources (e.g., CPU or memory optimized instances) based on the volume and specific resource requirements of the batch jobs submitted. With AWS Batch, there is no need to install and manage batch computing software or server clusters, allowing you to instead focus on analyzing results and solving problems. AWS Batch plans, schedules, and executes your batch computing workloads using Amazon EC2 and Spot Instances.
+                 </th><th> Yes. AWS Elastic Beanstalk stores your application files and, optionally, server log files in Amazon S3. If you are using the AWS Management Console, the AWS Toolkit for Visual Studio, or AWS Toolkit for Eclipse, an Amazon S3 bucket will be created in your account for you and the files you upload will be automatically copied from your local client to Amazon S3. </th></tr>
+             
+             
+             <tr><th>Security</th><th>In EC2 EFA brings the scalability, flexibility, and elasticity of cloud to tightly-coupled HPC applications. With EFA, tightly-coupled HPC applications have access to lower and more consistent latency and higher throughput than traditional TCP channels, enabling them to scale better. EFA support can be enabled dynamically, on-demand on any supported EC2 instance without pre-reservation, giving you the flexibility to respond to changing business/workload priorities.
+                 </th><th>SSL/TLS certificates are used to establish the identity of your website or application and secure connections between browsers and your website. Lightsail provides a signed certificate to use with your load balancer, and the load balancer provides SSL/TLS termination before routing verified traffic to your target instances over the secure AWS network. Lightsail certificates can only be used with Lightsail load balancers, not with individual Lightsail instances.
+                 </th><th>You can use IAM resource-based policies to control and monitor who and what (e.g., EC2 instances) can access your container images as well as how, when, and where they can access them. To get started, use the Management Console to create resource-based policies for your repositories. Alternatively, you can use sample policies and attach them to your repositories via the Amazon ECR CLI.
+                 </th><th>Amazon ECS schedules containers for execution on customer-controlled Amazon EC2 instances or with AWS Fargate and builds on the same isolation controls and compliance that are available for EC2 customers. Your compute instances are located in a Virtual Private Cloud (VPC) with an IP range that you specify. You decide which instances are exposed to the Internet and which remain private.
+                 </th><th> Amazon EKS is integrated with many AWS services to provide scalability and security for your applications. These services include Elastic Load Balancing for load distribution, IAM for authentication, Amazon VPC for isolation, and AWS CloudTrail for logging.
+                 </th><th>You grant permissions to your Lambda function to access other resources using an IAM role. AWS Lambda assumes the role while executing your Lambda function, so you always retain full, secure control of exactly which AWS resources it can use. Visit Setting up AWS Lambda to learn more about roles.
+                 </th><th>Integrated</th><th> By default, your application is available publicly at myapp.elasticbeanstalk.com for anyone to access. You can use Amazon VPC to provision a private, isolated section of your application in a virtual network that you define. This virtual network can be made private through specific security group rules, network ACLs, and custom route tables. You can also easily control what other incoming traffic, such as SSH, is delivered or not to your application servers by changing the EC2 security group settings.</th></tr>
+             
+             
+        </table>
+    </body>
+</html>
